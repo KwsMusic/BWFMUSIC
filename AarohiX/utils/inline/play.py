@@ -12,7 +12,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     pos = int(y)
 
     line = "╌"
-    circle = "♡"
+    circle = "◉"
 
     bar = line*(pos-1)
     bar += circle
@@ -27,39 +27,39 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="💘▷💘",
+                text="",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="❤‍🔥II❤‍🔥", callback_data=f"ADMIN Pause|{chat_id}"
+                text="", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="🌹‣‣I🌹", callback_data=f"ADMIN Skip|{chat_id}"
+                text="", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="❣️▢❣️", callback_data=f"ADMIN Stop|{chat_id}"
+                text="", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="➕ ✨ ᴩʟᴀʏʟɪsᴛ ✨ ➕",
+                text="🌼 ᴘʟᴀʏʟɪsᴛs",
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ[ᴅɪʟ❣️]🥀", url=config.SUPPORT_GROUP
+                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/II_ASHISH_GUPTA_IIl"
             ),
         ],
         [
            InlineKeyboardButton(
-                text="💝ᴏᴡɴᴇʀ💝", url=f"https://t.me/HONEY_SINGH_121",
+                text="💮︎ ᴄᴘᴀɴɴᴇʟ︎", url=f"https://t.me/MUSICBOT_OWNER",
             ),
            InlineKeyboardButton(
-                text="💖ᴍʏ ʟɪғᴇʟɪɴᴇ[❣️]💝", url=f"https://t.me/aarohi_ki_duniya",
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/ALL_QUIZ_TAME",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯🥺 ᴄʟᴏsᴇ 🥺✯", callback_data="close"
+                text="", callback_data="close"
             )
         ],
     ]
@@ -104,18 +104,18 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
            InlineKeyboardButton(
-                text="💝ᴏᴡɴᴇʀ💝", url=f"https://t.me/HONEY_SINGH_121",
+                text="🌼 ᴘʟᴀʏʟɪsᴛs", url=f"https://t.me/ALL_QUIZ_TAME",
             ),
            InlineKeyboardButton(
-                text="💝ᴍʏ ʟɪғᴇʟɪɴᴇ[❣️]💝", url=f"https://t.me/aarohi_ki_duniya",
+                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/II_ASHISH_GUPTA_IIl",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ[ᴅɪʟ❣️] 🥀", url=config.SUPPORT_GROUP
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/MUSICBOT_OWNER"
             ),
             InlineKeyboardButton(
-                text="✯🥺 ᴄʟᴏsᴇ 🥺✯", callback_data="close"
+                text="", callback_data="close"
             )
         ],
     ]
@@ -141,19 +141,19 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="➕ ✨ ᴩʟᴀʏʟɪsᴛ ✨ ➕",
+                text="💮︎ ᴄᴘᴀɴɴᴇʟ︎",
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ[ᴅɪʟ❣️]🥀", url=config.SUPPORT_GROUP
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/MUSICBOT_OWNER"
             ),
         ],
         [
            InlineKeyboardButton(
-                text="💝ᴏᴡɴᴇʀ💝", url=f"https://t.me/HONEY_SINGH_121",
+                text="💮︎ ᴄᴘᴀɴɴᴇʟ︎", url=f"https://t.me/ALL_QUIZ_TAME",
             ),
            InlineKeyboardButton(
-                text="💝ᴍʏ ʟɪғᴇʟɪɴᴇ[❣️]💝", url=f"https://t.me/aarohi_ki_duniya",
+                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/II_ASHISH_GUPTA_IIl",
             ),
         ],
         [
@@ -184,15 +184,15 @@ def telegram_markup(_, chat_id):
         ],
         [
            InlineKeyboardButton(
-                text="💝ᴏᴡɴᴇʀ💝", url=f"https://t.me/HONEY_SINGH_121",
+                text="💝ᴏᴡɴᴇʀ💝", url=f"https://t.me/II_ASHISH_GUPTA_IIl",
             ),
            InlineKeyboardButton(
-                text="💝ᴍʏ ʟɪғᴇʟɪɴᴇ[❣️]💝", url=f"https://t.me/aarohi_ki_duniya",
+                text="💝ᴍʏ ʟɪғᴇʟɪɴᴇ[❣️]💝", url=f"https://t.me/ALL_QUIZ_TAME",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ[ᴅɪʟ❣️]🥀", url=config.SUPPORT_GROUP
+                text="🥀 sᴜᴩᴩᴏʀᴛ[ᴅɪʟ❣️]🥀", url=f"https://t.me/MUSICBOT_OWNER"
             ),
             InlineKeyboardButton(
                 text="✯🥺 ᴄʟᴏsᴇ 🥺✯", callback_data="close"
@@ -317,39 +317,39 @@ def queue_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="💘▷💘",
+                text="",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="❤‍🔥II❤‍🔥", callback_data=f"ADMIN Pause|{chat_id}"
+                text="", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="🌹‣‣I🌹", callback_data=f"ADMIN Skip|{chat_id}"
+                text="", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="❣️▢❣️", callback_data=f"ADMIN Stop|{chat_id}"
+                text="", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="➕ ✨ ᴩʟᴀʏʟɪsᴛ ✨ ➕",
+                text="🌼 ᴘʟᴀʏʟɪsᴛs",
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text="🥀 sᴜᴩᴩᴏʀᴛ[ᴅɪʟ❣️]🥀", url=config.SUPPORT_GROUP
+                text="✨ 𝐎ωиєя ⏎", url=f"https://t.me/II_ASHISH_GUPTA_IIl"
             )
         ],
         [
            InlineKeyboardButton(
-                text="💝ᴏᴡɴᴇʀ💝", url=f"https://t.me/HONEY_SINGH_121",
+                text="💮︎ ᴄᴘᴀɴɴᴇʟ", url=f"https://t.me/MUSICBOT_OWNER",
             ),
            InlineKeyboardButton(
-                text="💝ᴍʏ ʟɪғᴇʟɪɴᴇ[❣️]💝", url=f"https://t.me/aarohi_ki_duniya",
+                text="⛩️ Gʀᴏᴜᴘꨄ︎ ⛩️", url=f"https://t.me/BWF_MUSIC1",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="✯🥺 ᴄʟᴏsᴇ 🥺✯", callback_data="close"
+                text="", callback_data="close"
             )
         ],
     ]
